@@ -2,7 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import PrimeiroComponente from './componentes/PrimeiroComponente';
 // import { CompA, CompB as B } from './componentes/DoisComponentes';
-import MultiElementos from './componentes/MultiElementos';
+// import CompA, { CompB as B } from './componentes/DoisComponentes';
+// import MultiElementos from './componentes/MultiElementos';
+// import FamiliaSantos from './componentes/FamiliaSantos';
+import Familia from './componentes/Familia';
+import Membro from './componentes/Membro';
+
 
 //selecionando a div com id == root dentro do body
 const elemento = document.getElementById('root');
@@ -32,9 +37,21 @@ const elemento = document.getElementById('root');
 //   , elemento
 // );
 
+// ReactDOM.render(
+//   <div>
+//     <MultiElementos />
+//   </div>
+//   , elemento
+// );
+
 ReactDOM.render(
   <div>
-    <MultiElementos />
+    {/* <FamiliaSantos sobrenome="Santos"/> */}
+    <Familia sobrenome="Santos">
+      <Membro nome="Thomas" />
+      <Membro nome="Ana" sobrenome="Sá" />
+      <Membro nome="Gabriel" sobrenome="Santos" />
+    </Familia>
   </div>
   , elemento
 );
