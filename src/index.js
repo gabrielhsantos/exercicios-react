@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import PrimeiroComponente from './componentes/PrimeiroComponente';
-import { CompA, CompB as B } from './componentes/DoisComponentes';
+// import { CompA, CompB as B } from './componentes/DoisComponentes';
+import MultiElementos from './componentes/MultiElementos';
 
 //selecionando a div com id == root dentro do body
 const elemento = document.getElementById('root');
@@ -23,10 +24,17 @@ const elemento = document.getElementById('root');
 //   </div>
 //   , elemento);
 
+// ReactDOM.render(
+//   <div>
+//     <CompA valor="Olá eu sou o A" />
+//     <B valor="Olá eu sou o B" /> {/* Renomeando um componente */}
+//   </div>
+//   , elemento
+// );
+
 ReactDOM.render(
   <div>
-    <CompA valor="Olá eu sou o A" />
-    <B valor="Olá eu sou o B" /> {/* Renomeando um componente */}
+    <MultiElementos />
   </div>
   , elemento
 );
